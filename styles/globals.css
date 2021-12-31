@@ -4,6 +4,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #343434;
+  color: white;
 }
 
 a {
@@ -13,4 +15,39 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+input[type="range"] {
+  touch-action: none;
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  padding: 5px;
+  background: white;
+  height: 30px;
+}
+
+input[type="range"]::-moz-range-track {
+  background: white;
+  height: 30px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 5px;
+  background: grey;
+  border-radius: 20%;
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 20px;
+  width: 5px;
+  background: grey;
+  border-radius: 20%;
 }
