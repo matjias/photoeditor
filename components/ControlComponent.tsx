@@ -20,10 +20,11 @@ const ControlComponent: FC<{ onControlChange: Function, onExport: Function }> = 
         type="range"
         min="0"
         max="100"
-        value={settings['borderSize']}
+        value={settings.borderSize}
         step="1"
         onChange={update}
       />
+      <p>{settings.borderSize}</p>
       <input name='borderColor' onChange={update} type="text" placeholder="border color" />
       <select name='ratio' defaultValue='none' onChange={update}>
           <option value='none'>
